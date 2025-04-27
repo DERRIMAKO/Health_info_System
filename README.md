@@ -55,20 +55,20 @@ Edit
 python app.py
 The application will start running on http://127.0.0.1:5000/.
 
-Access the API endpoints:
+## Access the API endpoints:
 
-POST /programs: Create a new health program.
+#### POST /programs: Create a new health program.
 
-POST /clients: Register a new client.
+#### POST /clients: Register a new client.
 
-POST /clients/enroll: Enroll a client in one or more programs.
+#### POST /clients/enroll: Enroll a client in one or more programs.
 
-GET /clients/search?query=Alice: Search for clients by name.
+#### GET /clients/search?query=Alice: Search for clients by name.
 
-GET /clients/{client_id}: View a client's profile.
+#### GET /clients/{client_id}: View a client's profile.
 
-Testing
-To run the tests for this application, use pytest:
+## Testing
+#### To run the tests for this application, use pytest:
 
 bash
 Copy
