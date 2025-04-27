@@ -14,7 +14,7 @@ Features
 
 ## Expose Client Profile via API: Access client profiles via an API to integrate with other systems.
 
-#Technologies Used
+# Technologies Used
 ### Backend: Flask (Python)
 
 ### Testing: pytest
@@ -76,10 +76,10 @@ Edit
 pytest
 The tests are located in the test_app.py file.
 
-API Documentation
-Here is a list of available API endpoints:
+# API Documentation
+### Here is a list of available API endpoints:
 
-POST /programs
+#### POST /programs
 Create a new health program.
 
 Request Body:
@@ -100,7 +100,7 @@ Edit
   "message": "Program created",
   "program_id": 1
 }
-POST /clients
+#### POST /clients
 Register a new client.
 
 Request Body:
@@ -121,7 +121,7 @@ Edit
   "message": "Client registered",
   "client_id": 1
 }
-POST /clients/enroll
+#### POST /clients/enroll
 Enroll a client in one or more programs.
 
 Request Body:
@@ -141,7 +141,7 @@ Edit
 {
   "message": "Client enrolled in programs"
 }
-GET /clients/search?query=Alice
+#### GET /clients/search?query=Alice
 Search for a client by name.
 
 Response:
@@ -155,7 +155,7 @@ Edit
     "age": 28
   }
 }
-GET /clients/{client_id}
+#### GET /clients/{client_id}
 View a client's profile.
 
 Response:
