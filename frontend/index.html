@@ -1,0 +1,52 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Information System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Health Information System</h1>
+
+    <div class="form-container">
+        <h2>Register a New Client</h2>
+        <form id="register-client-form">
+            <input type="text" id="client-name" placeholder="Client Name" required><br><br>
+            <input type="number" id="client-age" placeholder="Client Age" required><br><br>
+            <button type="submit">Register Client</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Enroll a Client in Programs</h2>
+        <form id="enroll-client-form">
+            <input type="number" id="enroll-client-id" placeholder="Client ID" required><br><br>
+            <input type="text" id="enroll-program-ids" placeholder="Program IDs" required><br><br>
+            <button type="submit">Enroll Client</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Search for Clients</h2>
+        <form id="search-client-form">
+            <input type="text" id="search-client-query" placeholder="Search by Client Name" required><br><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>View Client Profile</h2>
+        <form id="view-client-form">
+            <input type="number" id="view-client-id" placeholder="Client ID" required><br><br>
+            <button type="submit">View Profile</button>
+        </form>
+    </div>
+
+    <div id="client-search-results"></div>
+    <div id="client-profile"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
