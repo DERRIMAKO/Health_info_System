@@ -2,32 +2,32 @@
 A basic health information system to manage clients and health programs/services, built using Flask. This system allows a doctor (system user) to create health programs, register clients, enroll them in programs, and expose their profiles via an API.
 
 Features
-Create Health Program: Add programs such as TB, Malaria, HIV, etc.
+## Create Health Program: Add programs such as TB, Malaria, HIV, etc.
 
-Register Clients: Add new clients with basic information.
+## Register Clients: Add new clients with basic information.
 
-Enroll Clients in Programs: Assign clients to one or more health programs.
+## Enroll Clients in Programs: Assign clients to one or more health programs.
 
-Search for Clients: Search for clients by name.
+## Search for Clients: Search for clients by name.
 
-View Client Profile: View the profile of a client along with the programs they are enrolled in.
+## View Client Profile: View the profile of a client along with the programs they are enrolled in.
 
-Expose Client Profile via API: Access client profiles via an API to integrate with other systems.
+## Expose Client Profile via API: Access client profiles via an API to integrate with other systems.
 
-Technologies Used
-Backend: Flask (Python)
+#Technologies Used
+### Backend: Flask (Python)
 
-Testing: pytest
+### Testing: pytest
 
-API: RESTful APIs
+### API: RESTful APIs
 
-Data format: JSON
+### Data format: JSON
 
-Database: In-memory data storage (For this task, it could be a simple dictionary or a small database depending on your choice)
+### Database: In-memory data storage (For this task, it could be a simple dictionary or a small database depending on your choice)
 
-Setup Instructions
-Prerequisites
-Make sure you have the following installed on your machine:
+# Setup Instructions
+## Prerequisites
+### Make sure you have the following installed on your machine:
 
 Python 3.x
 
