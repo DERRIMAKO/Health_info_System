@@ -36,22 +36,13 @@ pip (Python package installer)
 Installation Steps
 Clone the repository:
 
-bash
-Copy
-Edit
 git clone https://github.com/your-username/health-info-system.git
 cd health-info-system
 Install the required dependencies:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Run the Flask application:
 
-bash
-Copy
-Edit
 python app.py
 The application will start running on http://127.0.0.1:5000/.
 
@@ -70,9 +61,6 @@ The application will start running on http://127.0.0.1:5000/.
 ## Testing
 #### To run the tests for this application, use pytest:
 
-bash
-Copy
-Edit
 pytest
 The tests are located in the test_app.py file.
 
@@ -82,20 +70,11 @@ The tests are located in the test_app.py file.
 #### POST /programs
 Create a new health program.
 
-Request Body:
-
-json
-Copy
-Edit
 {
   "name": "TB Program",
   "description": "Treatment for Tuberculosis"
 }
-Response:
 
-json
-Copy
-Edit
 {
   "message": "Program created",
   "program_id": 1
@@ -103,52 +82,27 @@ Edit
 #### POST /clients
 Register a new client.
 
-Request Body:
-
-json
-Copy
-Edit
 {
   "name": "Alice",
   "age": 28
 }
-Response:
 
-json
-Copy
-Edit
 {
   "message": "Client registered",
   "client_id": 1
 }
 #### POST /clients/enroll
 Enroll a client in one or more programs.
-
-Request Body:
-
-json
-Copy
-Edit
 {
   "client_id": 1,
   "program_ids": [1]
 }
-Response:
-
-json
-Copy
-Edit
 {
   "message": "Client enrolled in programs"
 }
 #### GET /clients/search?query=Alice
 Search for a client by name.
 
-Response:
-
-json
-Copy
-Edit
 {
   "1": {
     "name": "Alice",
@@ -157,12 +111,6 @@ Edit
 }
 #### GET /clients/{client_id}
 View a client's profile.
-
-Response:
-
-json
-Copy
-Edit
 {
   "client": {
     "name": "Alice",
@@ -175,5 +123,3 @@ Edit
     }
   ]
 }
-License
-This project is licensed under the MIT License - see the LICENSE file for 
