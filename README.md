@@ -1,4 +1,4 @@
-Health Information System
+# Health Information System
 A basic health information system to manage clients and health programs/services, built using Flask. This system allows a doctor (system user) to create health programs, register clients, enroll them in programs, and expose their profiles via an API.
 
 Features
